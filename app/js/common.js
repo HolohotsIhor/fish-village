@@ -13,16 +13,16 @@ $(document).ready(function() {
     /* Burger. Open and close */
     $(".toggle_mnu").click(function() {
         if ($(".top_mnu").is(":visible")) {
-            $('.top_mnu').css('left', '-581px');
+            $('.top_mnu').css('left', '-100%');
             $(".top_text").css("opacity", "1");
             $(".top_mnu").fadeOut(600);
-            $(".top_mnu li a").removeClass("fadeInUp animated");
+            $(".top_mnu li a").removeClass("fadeIn animated");
             $(".sw-topper, .sw-bottom, .sw-footer, .toggle_mnu a").css("opacity", "1");
         } else {
             $('.top_mnu').css('left', '0');
             $(".top_text").css("opacity", ".1");
             $(".top_mnu").fadeIn(600);
-            $(".top_mnu li a").addClass("fadeInUp animated");
+            $(".top_mnu li a").addClass("fadeIn animated");
             $(".sw-topper, .sw-bottom, .sw-footer, .toggle_mnu a").css("opacity", "0");
         };
     });
