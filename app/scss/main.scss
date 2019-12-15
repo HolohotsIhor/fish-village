@@ -128,7 +128,7 @@ a {
     min-width: 150px;
     margin-top: 30px;
 
-    @media only screen and (max-device-width: 767px) {
+    @media (max-device-width: 767px) {
         margin-top: 10px;
         float: left;
     }
@@ -160,6 +160,8 @@ header {
                 width: 100%;
                 transition: .5s;
                 color: #333;
+                padding-top: 5px;
+                padding-bottom: 5px;
 
                 .__tob-bar-left {
                     text-align: left;
@@ -167,6 +169,69 @@ header {
                     .logo-box {
                         display: none;
                     }
+
+                    .toggle_mnu {
+						
+                     
+                            .sw-topper,
+                            .sw-bottom,
+                            .sw-footer {
+                                background: #333;
+                            }
+                    
+
+                        a{
+                        	color: #333;
+                        }
+
+                    }
+                }
+
+                .__tob-bar-right{
+
+                	.phone-box{
+
+                		@media (max-device-width: 545px) {
+                			margin-top: 0;
+                		}
+
+                		a{
+                			color: #333;
+                		}
+
+                		span{
+                			color: $white;
+                		}
+
+                		p{
+                			@media (max-device-width: 545px) {
+                				display: none;
+                			}
+                		}
+
+                		
+                	}
+
+                	.social-box{
+						
+						
+
+                		a{
+							
+                			i{
+                				color: #333;
+                			}
+                		}
+                	}
+
+                	.button-box{	
+
+						
+                		a{
+                			color: #333;
+                			border-color: #333;
+                		}
+                	}
                 }
             }
         }
@@ -178,10 +243,15 @@ header {
         background-position-x: center;
         background-position-y: center;
         background-size: cover;
+        letter-spacing: 0;
 
         .sticky-wrapp {
             background: rgba(255, 255, 255, 0);
             padding-top: 27px;
+
+            @media (max-device-width: 545px) {
+            	padding-top: 10px;
+            }
 
             .__tob-bar-left {
                 text-align: left;
@@ -189,8 +259,16 @@ header {
                 .logo-box {
                     margin-top: -27px;
 
+                    @media (max-device-width: 545px) {
+            			margin-top: -10px;
+            		}
+
                     img {
                         max-width: 91px;
+
+                         @media (max-device-width: 545px) {
+							max-width: 40px;
+                         }
                     }
                 }
 
@@ -205,6 +283,11 @@ header {
                     float: left;
                     margin-right: 50px;
 
+                    @media (max-device-width: 545px) {
+                    	margin-right: 5px;
+                    	margin-top: 0;
+                    }
+
                     &:hover {
 
                         .sw-topper,
@@ -218,7 +301,7 @@ header {
                         }
                     }
 
-                    @media only screen and (max-device-width: 767px) {
+                    @media (max-device-width: 767px) {
                         right: 5px;
                     }
 
@@ -226,6 +309,10 @@ header {
                         font-size: 11px;
                         margin-left: 5px;
                         transition: .5s;
+
+                        @media (max-device-width: 545px) {
+							margin-left: 0;
+                        }
                     }
 
                     span {
@@ -362,8 +449,6 @@ header {
                                 &:last-child {
                                     margin-right: 0;
                                 }
-
-                                i {}
                             }
                         }
 
@@ -422,16 +507,30 @@ header {
                     float: right;
                     margin-right: 20px;
 
+                    @media only screen and (max-device-width: 545px) {
+						width: auto;
+						margin-right: 0;
+                    }
+
                     p {
                         font-size: 11px;
                         line-height: 13px;
                         margin-bottom: 0;
+
+                        @media only screen and (max-device-width: 545px) {
+                        	font-size: 12px;
+                        }
                     }
 
                     a {
                         font-size: 22px;
                         line-height: 28px;
                         transition: .3s;
+
+                        @media only screen and (max-device-width: 545px) {
+                        	font-size: 15px;
+    						line-height: 15px;
+                        }
 
                         &:hover {
                             color: $grey;
@@ -442,9 +541,11 @@ header {
                         font-size: 11px;
                         background-color: #00aa5b;
                         border-radius: 5px;
-                        display: inline-block;
+                        display: block;
                         padding: 0 0.8em;
                         line-height: 1.5;
+                        max-width: 125px;
+                        float: right;
                     }
                 }
 
@@ -455,13 +556,17 @@ header {
                     margin-right: 30px;
                     margin-top: 9px;
 
+                    @media (max-device-width: 991px) {
+						display: none;
+					}
+
                     a {
                         font-size: 24px;
                         margin-right: 5px;
                         transition: .3s;
 
-                         &:hover{
-							color: $grey;
+                        &:hover {
+                            color: $grey;
                         }
 
                         &:last-child {
@@ -474,6 +579,10 @@ header {
                     display: block;
                     float: right;
 
+                    @media (max-device-width: 991px) {
+						display: none;
+                	}
+
                     a {
                         margin: 6px 0 0 0;
                         border: 1px solid #fff;
@@ -483,9 +592,9 @@ header {
                         display: inline-block;
                         transition: .3s;
 
-                        &:hover{
-							border-color: $grey;
-							color: $grey;
+                        &:hover {
+                            border-color: $grey;
+                            color: $grey;
                         }
                     }
                 }

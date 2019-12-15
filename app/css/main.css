@@ -97,7 +97,7 @@ a {
   transition: .3s;
   min-width: 150px;
   margin-top: 30px; }
-  @media only screen and (max-device-width: 767px) {
+  @media (max-device-width: 767px) {
     .btn {
       margin-top: 10px;
       float: left; } }
@@ -121,11 +121,34 @@ header {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    color: #333; }
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 5px; }
     header.sticky .header .sticky-wrapp .__tob-bar-left {
       text-align: left; }
       header.sticky .header .sticky-wrapp .__tob-bar-left .logo-box {
         display: none; }
+      header.sticky .header .sticky-wrapp .__tob-bar-left .toggle_mnu .sw-topper,
+      header.sticky .header .sticky-wrapp .__tob-bar-left .toggle_mnu .sw-bottom,
+      header.sticky .header .sticky-wrapp .__tob-bar-left .toggle_mnu .sw-footer {
+        background: #333; }
+      header.sticky .header .sticky-wrapp .__tob-bar-left .toggle_mnu a {
+        color: #333; }
+    @media (max-device-width: 545px) {
+      header.sticky .header .sticky-wrapp .__tob-bar-right .phone-box {
+        margin-top: 0; } }
+    header.sticky .header .sticky-wrapp .__tob-bar-right .phone-box a {
+      color: #333; }
+    header.sticky .header .sticky-wrapp .__tob-bar-right .phone-box span {
+      color: #fff; }
+    @media (max-device-width: 545px) {
+      header.sticky .header .sticky-wrapp .__tob-bar-right .phone-box p {
+        display: none; } }
+    header.sticky .header .sticky-wrapp .__tob-bar-right .social-box a i {
+      color: #333; }
+    header.sticky .header .sticky-wrapp .__tob-bar-right .button-box a {
+      color: #333;
+      border-color: #333; }
   header .header {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/header-background.jpg");
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-background.jpg");
@@ -133,17 +156,27 @@ header {
     height: 809px;
     background-position-x: center;
     background-position-y: center;
-    background-size: cover; }
+    background-size: cover;
+    letter-spacing: 0; }
     header .header .sticky-wrapp {
       background: rgba(255, 255, 255, 0);
       padding-top: 27px; }
+      @media (max-device-width: 545px) {
+        header .header .sticky-wrapp {
+          padding-top: 10px; } }
       header .header .sticky-wrapp .__tob-bar-left {
         text-align: left;
         /* Mobile navigation */ }
         header .header .sticky-wrapp .__tob-bar-left .logo-box {
           margin-top: -27px; }
+          @media (max-device-width: 545px) {
+            header .header .sticky-wrapp .__tob-bar-left .logo-box {
+              margin-top: -10px; } }
           header .header .sticky-wrapp .__tob-bar-left .logo-box img {
             max-width: 91px; }
+            @media (max-device-width: 545px) {
+              header .header .sticky-wrapp .__tob-bar-left .logo-box img {
+                max-width: 40px; } }
         header .header .sticky-wrapp .__tob-bar-left .toggle_mnu {
           z-index: 100;
           border: none;
@@ -153,13 +186,17 @@ header {
           color: #fff;
           float: left;
           margin-right: 50px; }
+          @media (max-device-width: 545px) {
+            header .header .sticky-wrapp .__tob-bar-left .toggle_mnu {
+              margin-right: 5px;
+              margin-top: 0; } }
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu:hover .sw-topper,
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu:hover .sw-bottom,
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu:hover .sw-footer {
             background: #b8c0c7; }
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu:hover a {
             color: #b8c0c7; }
-          @media only screen and (max-device-width: 767px) {
+          @media (max-device-width: 767px) {
             header .header .sticky-wrapp .__tob-bar-left .toggle_mnu {
               right: 5px; } }
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu a {
@@ -168,6 +205,9 @@ header {
             -webkit-transition: .5s;
             -o-transition: .5s;
             transition: .5s; }
+            @media (max-device-width: 545px) {
+              header .header .sticky-wrapp .__tob-bar-left .toggle_mnu a {
+                margin-left: 0; } }
           header .header .sticky-wrapp .__tob-bar-left .toggle_mnu span {
             display: block; }
         header .header .sticky-wrapp .__tob-bar-left .toggle_mnu:hover {
@@ -307,31 +347,47 @@ header {
         display: block;
         float: right;
         margin-right: 20px; }
+        @media only screen and (max-device-width: 545px) {
+          header .header .sticky-wrapp .__tob-bar-right .phone-box {
+            width: auto;
+            margin-right: 0; } }
         header .header .sticky-wrapp .__tob-bar-right .phone-box p {
           font-size: 11px;
           line-height: 13px;
           margin-bottom: 0; }
+          @media only screen and (max-device-width: 545px) {
+            header .header .sticky-wrapp .__tob-bar-right .phone-box p {
+              font-size: 12px; } }
         header .header .sticky-wrapp .__tob-bar-right .phone-box a {
           font-size: 22px;
           line-height: 28px;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s; }
+          @media only screen and (max-device-width: 545px) {
+            header .header .sticky-wrapp .__tob-bar-right .phone-box a {
+              font-size: 15px;
+              line-height: 15px; } }
           header .header .sticky-wrapp .__tob-bar-right .phone-box a:hover {
             color: #b8c0c7; }
         header .header .sticky-wrapp .__tob-bar-right .phone-box span {
           font-size: 11px;
           background-color: #00aa5b;
           border-radius: 5px;
-          display: inline-block;
+          display: block;
           padding: 0 0.8em;
-          line-height: 1.5; }
+          line-height: 1.5;
+          max-width: 125px;
+          float: right; }
       header .header .sticky-wrapp .__tob-bar-right .social-box {
         display: block;
         float: right;
         vertical-align: top;
         margin-right: 30px;
         margin-top: 9px; }
+        @media (max-device-width: 991px) {
+          header .header .sticky-wrapp .__tob-bar-right .social-box {
+            display: none; } }
         header .header .sticky-wrapp .__tob-bar-right .social-box a {
           font-size: 24px;
           margin-right: 5px;
@@ -345,6 +401,9 @@ header {
       header .header .sticky-wrapp .__tob-bar-right .button-box {
         display: block;
         float: right; }
+        @media (max-device-width: 991px) {
+          header .header .sticky-wrapp .__tob-bar-right .button-box {
+            display: none; } }
         header .header .sticky-wrapp .__tob-bar-right .button-box a {
           margin: 6px 0 0 0;
           border: 1px solid #fff;
