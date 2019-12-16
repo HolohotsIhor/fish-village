@@ -112,6 +112,8 @@ body {
 header {
   height: 949px;
   color: #fff; }
+  header.sticky .help-wrapp {
+    height: 150px; }
   header.sticky .header .sticky-wrapp {
     position: fixed;
     background: white;
@@ -158,9 +160,32 @@ header {
     background-position-y: center;
     background-size: cover;
     letter-spacing: 0; }
+    header .header .__content-wrapp .__left-content .logo-wrapp {
+      padding-top: 60px;
+      max-width: 300px;
+      border-bottom: solid 1px #fff;
+      margin-bottom: 30px; }
+      header .header .__content-wrapp .__left-content .logo-wrapp img {
+        max-width: 110px;
+        margin-bottom: 30px; }
+    header .header .__content-wrapp .__left-content h2 {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 20px; }
+    header .header .__content-wrapp .__left-content p.fullText {
+      font-size: 20px;
+      font-family: 'MuseoSansCyrlLight', sans-serif;
+      font-weight: 300; }
+    header .header .__content-wrapp .__left-content p span {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1px 8px;
+      margin: 0 8px 8px 0;
+      border-radius: 4px;
+      min-width: 75px; }
     header .header .sticky-wrapp {
       background: rgba(255, 255, 255, 0);
-      padding-top: 27px; }
+      padding-top: 27px;
+      z-index: 99; }
       @media (max-device-width: 545px) {
         header .header .sticky-wrapp {
           padding-top: 10px; } }
@@ -417,8 +442,19 @@ header {
           header .header .sticky-wrapp .__tob-bar-right .button-box a:hover {
             border-color: #b8c0c7;
             color: #b8c0c7; }
-    header .header .carousel {
-      height: 140px; }
+  header .carousel-box {
+    height: 140px; }
+    header .carousel-box .owl-item {
+      height: 140px;
+      margin-right: 0 !important;
+      cursor: pointer; }
+      header .carousel-box .owl-item img {
+        -o-object-fit: cover;
+           object-fit: cover; }
+    header .carousel-box .owl-dots {
+      display: none; }
+    header .carousel-box .owl-nav {
+      color: #333; }
 
 /* 4.  Form 
 input,

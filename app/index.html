@@ -8,113 +8,200 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="libs/lightGallery-master/dist/css/lightgallery.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header class="no-sticky" id="navbar">
         <div class="header">
-            <div class="sticky-wrapp">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-4 col-md-6 col-sm-6 col-6 __tob-bar-left">
-                            <!-- Burger -->
-                            <button class="toggle_mnu">
-                                <span class="sandwich">
-                                    <span class="sw-topper"></span>
-                                    <span class="sw-bottom"></span>
-                                    <span class="sw-footer"></span>
-                                </span>
-                                <a href="#">Меню</a>
-                            </button>
-                            <!-- Mobile menu  -->
-                            <nav class="top_mnu fadeInLeft animated">
+            <div class="help-wrapp">
+                <div class="sticky-wrapp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-4 col-md-6 col-sm-6 col-6 __tob-bar-left">
+                                <!-- Burger -->
                                 <button class="toggle_mnu">
                                     <span class="sandwich">
-                                        <i class="fa fa-times"></i>
+                                        <span class="sw-topper"></span>
+                                        <span class="sw-bottom"></span>
+                                        <span class="sw-footer"></span>
                                     </span>
+                                    <a href="#">Меню</a>
                                 </button>
-                                <ul>
-                                    <div class="menu-glavnoe-menyu-container">
-                                        <ul id="menu-glavnoe-menyu" class="menu">
-                                            <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47 current-menu-item"><a href="#">Главная</a></li>
-                                            <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="#">Галерея</a></li>
-                                            <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="#">Планировки</a></li>
-                                            <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="#">Документы</a></li>
-                                            <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="#">Контакты</a></li>
-                                        </ul>
+                                <!-- Mobile menu  -->
+                                <nav class="top_mnu fadeInLeft animated">
+                                    <button class="toggle_mnu">
+                                        <span class="sandwich">
+                                            <i class="fa fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <ul>
+                                        <div class="menu-glavnoe-menyu-container">
+                                            <ul id="menu-glavnoe-menyu" class="menu">
+                                                <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47 current-menu-item"><a href="#">Главная</a></li>
+                                                <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="#">Галерея</a></li>
+                                                <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="#">Планировки</a></li>
+                                                <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="#">Документы</a></li>
+                                                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="#">Контакты</a></li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                    <div class="details-box">
+                                        <div class="img-box">
+                                            <img src="img/maksim.jpg" alt="">
+                                        </div>
+                                        <p>
+                                            Нужна помощь? <br>
+                                            Позвоните или напишите в чат <br>
+                                            эксперту проекта
+                                        </p>
+                                        <div class="social-box">
+                                            <a href="https://vk.com/domkld" traget="_blank"><i class="fa fa-vk"></i></a>
+                                            <a href="https://www.facebook.com/pg/DOMkld" traget="_blank"><i class="fa fa-facebook-square"></i></a>
+                                            <a href="https://www.instagram.com/domechty.kld" traget="_blank"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://www.youtube.com/channel/UCncfavwQJMcb0ATDfQ301uA?view_as=subscriber" traget="_blank"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                        <div class="phones-box">
+                                            <a href="tel:+74012900870">+7(4012) 90-08-70</a>
+                                        </div>
                                     </div>
-                                </ul>
-                                <div class="details-box">
-                                    <div class="img-box">
-                                        <img src="img/maksim.jpg" alt="">
-                                    </div>
-                                    <p>
-                                        Нужна помощь? <br>
-                                        Позвоните или напишите в чат <br>
-                                        эксперту проекта
-                                    </p>
-                                    <div class="social-box">
-                                        <a href="https://vk.com/domkld" traget="_blank"><i class="fa fa-vk"></i></a>
-                                        <a href="https://www.facebook.com/pg/DOMkld" traget="_blank"><i class="fa fa-facebook-square"></i></a>
-                                        <a href="https://www.instagram.com/domechty.kld" traget="_blank"><i class="fa fa-instagram"></i></a>
-                                        <a href="https://www.youtube.com/channel/UCncfavwQJMcb0ATDfQ301uA?view_as=subscriber" traget="_blank"><i class="fa fa-youtube"></i></a>
-                                    </div>
-                                    <div class="phones-box">
-                                        <a href="tel:+74012900870">+7(4012) 90-08-70</a>
-                                    </div>
+                                </nav>
+                                <div class="logo-box">
+                                    <img src="img/logo.png" alt="logo">
                                 </div>
-                            </nav>
-                            <div class="logo-box">
-                                <img src="img/logo.png" alt="logo">
                             </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-8 col-md-6 col-sm-6 col-6 __tob-bar-right">
-                            <div class="button-box">
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">Заказать звонок</a>
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                ...
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="col-xl-7 col-lg-8 col-md-6 col-sm-6 col-6 __tob-bar-right">
+                                <div class="button-box">
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Заказать звонок</a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="social-box">
-                                <a href="https://vk.com/domkld" traget="_blank"><i class="fa fa-vk"></i></a>
-                                <a href="https://www.facebook.com/pg/DOMkld" traget="_blank"><i class="fa fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/domechty.kld" traget="_blank"><i class="fa fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UCncfavwQJMcb0ATDfQ301uA?view_as=subscriber" traget="_blank"><i class="fa fa-youtube"></i></a>
-                            </div>
-                            <div class="phone-box">
-                                <p>Круглосуточная горячая линия:</p>
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">+7(4012) 90-08-70</a>
-                                <span>Сейчас работаем</span>
+                                <div class="social-box">
+                                    <a href="https://vk.com/domkld" traget="_blank"><i class="fa fa-vk"></i></a>
+                                    <a href="https://www.facebook.com/pg/DOMkld" traget="_blank"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="https://www.instagram.com/domechty.kld" traget="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCncfavwQJMcb0ATDfQ301uA?view_as=subscriber" traget="_blank"><i class="fa fa-youtube"></i></a>
+                                </div>
+                                <div class="phone-box">
+                                    <p>Круглосуточная горячая линия:</p>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">+7(4012) 90-08-70</a>
+                                    <span>Сейчас работаем</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="__content-wrapp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 __left-content">
+                            <div class="logo-wrapp">
+                                <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                            </div>
+                            <h2>
+                                Рыбная деревня – жилой квартал на территории 4,5 гектара в Пресненском районе
+                            </h2>
+                            <p class="fullText">Квартиры площадью от 45 м² с ценой по запросу</p>
+                            <p>
+                                <span>готовая отделка</span>
+                                <span>квартиры с террасами</span>
+                                <span>двухуровневые квартиры</span>
+                                <span>детский сад на территории</span>
+                                <span>пресненский район</span>
+                                <span>парк на территории</span>
+                                <span>подземный паркинг</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="carousel">
+        <div class="carousel-box">
+
+            <!-- <div><img src="img/rd3.jpg" alt="img2"></div>
+                <div><img src="img/rd4.jpg" alt="img3"></div>
+                <div><img src="img/rd5.jpg" alt="img4"></div>
+                <div><img src="img/jkrd.jpg" alt="img5"></div>
+                <div><img src="img/rybder.jpg" alt="img6"></div>
+                <div><img src="img/rybder2.jpg" alt="img7"></div> -->
+
+            <div id="lightgallery" class="owl-carousel list-unstyled list-unstyled">
+
+                <div data-responsive="img/rd2.jpg 375, img/rd2.jpg 480, img/rd2.jpg 800" data-src="img/rd2.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+                <div data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+                <div data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+                <div data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+                <div data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+                <div data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/rd2.jpg">
+                    </a>
+                </div>
+
+            </div>
         </div>
+
     </header>
     <!-- / Header -->
+    
+
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="libs/lightGallery-master/dist/js/lightgallery-all.min.js"></script>
+    <script src="libs/lightGallery-master/lib/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+    </script>
 </body>
 
 </html>

@@ -53,4 +53,32 @@ $(document).ready(function() {
             navbar.classList.add("no-sticky");
         }
     }
+
+    /********************** OWL carousel ***************/
+    $(function() {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 3,
+        margin: 10,
+        loop: true,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            960: {
+                items: 6
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
+});
+
+    
 });
